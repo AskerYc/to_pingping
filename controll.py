@@ -4,7 +4,7 @@ import os
 from flask import send_from_directory
 
 app = Flask(__name__)
-root = os.path.join(os.path.dirname(os.path.abspath(__file__)))#html是个文件夹
+root = os.path.join(os.path.dirname(os.path.abspath(__file__)))
 
 @app.route('/welcome_pingping')
 def index():
@@ -128,4 +128,4 @@ def index18():
 
 
 if __name__ == '__main__':
-	app.run(debug=True)
+	app.run(host='0.0.0.0', port=8080)
