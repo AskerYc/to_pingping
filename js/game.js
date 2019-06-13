@@ -743,7 +743,7 @@ function iHeartYou(){
 	if(window.location.hash){
 		vtext.textContent = encryptString(decodeURIComponent(window.location.hash).substring(1));
 	}else{
-		vtext.textContent = "我爱平";
+		vtext.textContent = "我爱平平";
 	}
 
 	setTimeout(function(){
