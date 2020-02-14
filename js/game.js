@@ -743,7 +743,7 @@ function iHeartYou(){
 	if(window.location.hash){
 		vtext.textContent = encryptString(decodeURIComponent(window.location.hash).substring(1));
 	}else{
-		vtext.textContent = "我爱平平";
+		vtext.textContent = "我爱你";
 	}
 
 	setTimeout(function(){
@@ -925,12 +925,12 @@ window.LEVEL_CONFIG = [
 	// U
 	{
 		canvas:document.getElementById("canvas_3"),
-		player:{ x:60, y:75 },
-		//door:{ x:270, y:75 },
-		door:{x:60,y:270},
-		key:{ x:185, y:65 },
+		player:{ x:30, y:75 },
+		door:{ x:270, y:75 },
+		//door:{x:60,y:270},
+		key:{ x:150, y:270 },
 		circles: [
-			{x:120,y:65,radius:60}
+			{x:150,y:150,radius:115}
 		],
 		countdown: 1300
 	}
